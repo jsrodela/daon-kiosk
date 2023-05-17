@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+  <link rel="stylesheet" href="{% static 'kiosk/index.css'%}">
+  <script src="{% static 'kiosk/index.js' %}"></script>
+</head>
+<body>
+  <h1>world</h1>
+  <h1>{{ hello }}</h1>
+  <img src="{% static 'kiosk/rodela.png' %}" width="300">
+
+  <div id="links">
+    <a href="/kiosk">kiosk(here)</a>
+    <a href="/manager">manager</a>
+    <a href="/">student</a>
+  </div>
+</body>

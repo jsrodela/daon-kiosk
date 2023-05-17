@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+  <link rel="stylesheet" href="{% static 'manager/index.css'%}">
+  <script src="{% static 'manager/index.js' %}"></script>
+</head>
+<body>
+  <h1>world</h1>
+  <h1>{{ hello }}</h1>
+  <img src="{% static 'manager/rodela.png' %}" width="300">
+
+  <div id="links">
+    <a href="/kiosk">kiosk</a>
+    <a href="/manager">manager(here)</a>
+    <a href="/">student</a>
+  </div>
+</body>
