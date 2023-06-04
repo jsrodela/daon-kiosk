@@ -1,0 +1,33 @@
+body {
+  display: flex;
+}
+
+header {
+  margin: 10px;
+}
+
+main {
+  flex-grow: 1;
+}
+
+main section {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+section.glance {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+section.glance aside {
+  margin: 0.5rem 2rem;
+}
+
+h1.num {
+  font-size: 3rem;
+  margin: 0;
+}

@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 {% load static %}
+<html>
 <head>
-  <link rel="stylesheet" href="{% static 'kiosk/index.css'%}">
-  <script src="{% static 'kiosk/index.js' %}"></script>
+  <title>Kiosk</title>
+  <link rel="stylesheet" href="{% static 'kiosk/index.css' %}">
 </head>
 <body>
-  <h1>world</h1>
-  <h1>{{ hello }}</h1>
-  <img src="{% static 'kiosk/rodela.png' %}" width="300">
-
-  <div id="links">
-    <a href="/kiosk">kiosk(here)</a>
-    <a href="/manager">manager</a>
-    <a href="/">student</a>
+  <h1>DAON</h1>
+  <h2>self study room</h2>
+  
+  <div class="button-container">
+    <a href="/kiosk/seats" class="button">
+      <img src="{% static 'kiosk/img/in.png' %}" alt="입실">
+      입실
+    </a>
+    <a href="#" class="button">
+      <img src="{% static 'kiosk/img/out.png' %}" alt="퇴실">
+      퇴실
+    </a>
+    <a href="#" class="button">
+      <img src="{% static 'kiosk/img/signup.png' %}" alt="Option 3">
+      가입하기
+    </a>
+    <a href="#" class="button">
+      <img src="{% static 'kiosk/img/ranking.png' %}" alt="Option 4">
+      랭킹
+    </a>
+  </div>
+  
+  <div class="logo-container">
+    <span class="logo-text">2023 ⓒRoDeLa 6.0</span>
+    <img src="{% static 'kiosk/img/rodela.png' %}" alt="Logo" class="logo">
   </div>
 </body>
+</html>

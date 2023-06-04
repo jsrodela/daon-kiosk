@@ -1,0 +1,20 @@
+.seat {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+}
+
+#numpad {
+  display: none;
+}
+
+@keyframes showNumpad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

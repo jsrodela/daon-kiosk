@@ -1,0 +1,31 @@
+.flex{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+ 
+.numPan{
+  border-radius: 10px;
+  background: #fff;
+}
+.numPan .disp input{
+  width:200px;
+  padding:20px;
+  outline:none;
+  border-radius: none;
+  background: none;
+  text-align: center;
+  color:black;
+  font: size 2px;
+}
+.numPan .nums > .r div{
+  width: 50px;
+  height:50px;
+  margin: 10px;
+  border: 1px solid #666;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}

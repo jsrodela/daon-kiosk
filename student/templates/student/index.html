@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 {% load static %}
 <head>
-  <link rel="stylesheet" href="{% static 'student/index.css'%}">
+  <link rel="stylesheet" href="{% static 'student/index.css' %}">
   <script src="{% static 'student/index.js' %}"></script>
 </head>
 <body>
-  <h1>world</h1>
-  <h1>{{ hello }}</h1>
-  <img src="{% static 'student/rodela.png' %}" width="300">
+  <header>
+    <h1>DAON</h1>
+  </header>
+  <div class="rank">
+      <div class="medal">
+        <img src="{% static 'img/1st.png' %}" width="70">
+        <h2 id='num_1'>학번</h2>
+        <h4 id='time_1'>시간</h4>
+      </div>
+      <div class="medal">
+        <img src="{% static 'img/2nd.png' %}" width="70">
+        <h2 id='num_2'>학번</h2>
+        <h4 id='time_2'>시간</h4>
+      </div>
+      <div class="medal">
+        <img src="{% static 'img/3rd.png' %}" width="70">
+        <h2 id='num_3'>학번</h3>
+        <h4 id='time_3'>시간</h4>
+      </div>
+  </div>
+  <br>
+
+  <input type="text" id="searchInput" placeholder="학번" />
+  <button onclick="displayNumbers()">검색</button>
+
+  <br>
+    <input type="text" id="numberInput" placeholder="학번" />
+  <button onclick="addNumber()">추가</button>
+  <table>
+    <tr>
+      <th>등수</th>
+      <th>학번</th>
+      <th>시간</th>
+    </tr>
+    <tbody id="numberTableBody"></tbody>
+  </table>
+   
+
+
+
 
   <div id="links">
     <a href="/kiosk">kiosk</a>

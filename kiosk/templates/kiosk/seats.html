@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static 'kiosk/seats.css' %}">
+</head>
+
+<body>
+  <main>
+    <div style="display: flex">
+      <div class="seat"></div>
+      <div class="seat" style="margin-left: 154px;"></div>
+      <div class="seat" style="margin-left: 50px"></div>
+      <div class="seat" style=""></div>
+      <div class="seat" style="margin-left: 50px"></div>
+      <div class="seat" style=""></div>
+      <div class="seat" style="margin-left: 50px;"></div>
+    </div>
+    {% for i in '.....' %}
+      <div style="display: flex">
+        <div class="seat" style=""></div>
+        <div class="seat" style="margin-left: 50px;"></div>
+        <div class="seat"></div>
+        <div class="seat" style="margin-left: 50px"></div>
+        <div class="seat" style=""></div>
+        <div class="seat" style="margin-left: 50px;"></div>
+        <div class="seat" style=""></div>
+        <div class="seat" style="margin-left: 50px;"></div>
+      </div>
+    {% endfor %}
+
+    {% include 'kiosk/numpad.html' %}
+  </main>
+  <script src="{% static 'kiosk/seats.js' %}"></script>
+</body>
+</html>

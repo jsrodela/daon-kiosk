@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background: black;
+  padding: 0.2rem;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.rank {
+  display: flex;
+  padding: 1rem;
+  width: 90%;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+/* 그라데이션 배경 위에 하얀색을 덧씌움 */
+.medal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px; 
+  padding: 8px; /* border width */
+  background:linear-gradient(to right, #da22ff, #9733ee); 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+.floor {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.medal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem 5rem;
+  animation: fadein 1s;
+}
+
+.medal h2 {
+  margin: 0.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.medal h4 {
+  margin: 0.2rem;
+  font-size: 1.3rem;
+  background: linear-gradient(to right, #da22ff, #9733ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(50px)
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+table {
+  width: 70%;
+  position: relative;
+  padding: 1rem;
+  margin: 1rem;
+  animation: fadein 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  text-align: center;
+}
